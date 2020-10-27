@@ -153,7 +153,7 @@ class LogTable
     {
         $field = self::buildCustomDimensionColumnName($index);
 
-        return sprintf('ADD COLUMN %s VARCHAR(255) DEFAULT NULL', $field);
+        return sprintf('ADD COLUMN %s JSON DEFAULT NULL', $field);
     }
 
     public function install()
